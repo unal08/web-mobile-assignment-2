@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Products</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid d-flex flex-row flex-nowrap justify-content-center px-0" style="min-width: 576px;">
+        <form class="d-flex flex-row  border rounded-1 border-success" style="height: 50px;" role="search">
+          <input type="search" id="search" placeholder="Search..." class="bg-transparent border-0"
+            style="box-sizing: content-box !important; padding: .5rem;">
+          <button class="btn btn-outline-success m-0 border-0" type="submit" id="searchbtn"><i
+              class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <div class="dropdown" id="dropdown" aria-expanded="false">
+          <button class="btn btn-dark dropdown-toggle m-0" id="select-category" type="button">All Categories</button>
+          <ul class="dropdown-menu" id="dropdown-menu"></ul>
+        </div>
+        <a href="https://github.com/unal08" class="p-2 text-black bg-light" target="_blank" ><i class="fa-brands fa-github fs-3 "></i></a>
+      </div>
+    </nav>
+  </header>
+  <main style="padding: 3rem;">
+    <div class="containermain container container-fluid m-auto p-0 " style="width: 90%;">
+      <div id="root"></div>
+    </div>
+    <div id="pagination">
+      <button id="prevPage" style="cursor: pointer;">Previous Page</button>
+      <button id="nextPage" style="cursor: pointer;">Next Page</button>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>
